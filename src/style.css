@@ -1,3 +1,98 @@
-h1{
-    color:red
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900;1000&display=swap");
+
+:root {
+    --Primary-color:#fff;
+  --main-color: #1e90ff;
+}
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+*::selection {
+  background: var(--main-color);
+  color: var(--Primary-color);
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: bisque;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--Primary-color);
+    text-transform: uppercase;
+    
+}
+header .logo span{
+   color: var(--main-color);
+   
+}
+header .navbar a{
+    color: var(--Primary-color);
+    font-size: 2rem;
+    margin: 0.8rem;  
+}
+header .navbar a:hover{
+   color: var(--main-color);
+   text-decoration: underline;
+}
+header .icons i{
+    font-size: 2.5rem;
+   color: var(--Primary-color);
+   cursor: pointer;
+   margin-right: 2rem;
+}
+header .icons i:hover{
+  color: var(--main-color);
+}
+header .search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: bisque;
+    padding: 1rem 2rem;
+    border-top: .2rem solid rgb(85, 68, 48);
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+header .search-bar-container #search-bar{
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}
+header .search-bar-container label{
+ color: var(--Primary-color);
+ cursor: pointer;
+ font-size: 3rem;
+ margin-top: rem;
+}
+header .search-bar-container label:hover{
+  color: var(--main-color);
 }
