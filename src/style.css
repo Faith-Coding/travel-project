@@ -226,7 +226,7 @@ body {
     color: #000;
   }
   body {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    background: 
       url("/images/background.jpeg");
     background-size: cover;
     background-position: center;
@@ -259,11 +259,45 @@ body {
     margin: 1rem;
     background: rgb(244, 204, 156);
   }
+ .packages .package-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+ }
+ .packages h3{
+  text-align: center;
+  font-size: 1rem;
+
+}
+.packages .packages-content .btn{
+font-size: 1rem;
+  }
+.book .row img {
+ width: 10rem;
+}
+.book .row form {
+width: 10rem;
+}
 }
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
+  .book .row img {
+ width: 10rem;
+}
+.book .row form {
+width: 10rem;
+
+}
+    .packages-grid{
+  grid-template-columns: repeat(2, 1fr);
+ 
+ }
+.packages .packages-content .btn{
+font-size: 1rem;
+  }
+
 }
 .home {
   min-height: 100vh;
@@ -294,8 +328,6 @@ body {
   height: auto;
   width: 100%;
   object-fit: cover;
- 
-  
 }
 .home .controls {
   padding: 1rem;
@@ -320,15 +352,92 @@ body {
 .heading {
   text-align: center;
   padding: 2.5rem 0;
-  margin: 10rem;
-  }
+  margin-top: 25rem;
+}
 .heading span {
- font-size: 3.5rem;
- background: rgb(236, 226, 212);
- color: var(--main-color);
- border-radius: .5rem;
- padding: .2rem 1rem;
-  } 
-  .heading span.space {
-    background: none;
-  }
+  font-size: 3.5rem;
+  background: rgb(236, 226, 212);
+  color: var(--main-color);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+.heading span.space {
+  background: none;
+}
+.heading span {
+  font-size: 2.5rem;
+}
+.book .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+}
+.book .row .image {
+  flex: 1 1 40rem;
+}
+.book .row img {
+  width: 100%; 
+  border-radius: 2rem;
+}
+.book .row form {
+  flex: 1 1 40rem;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+}
+.book .row form .inputbox {
+  padding: 0.5rem 0;
+}
+.book .row form .inputbox input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.book .row form .inputbox h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.packages{
+  margin-top: 5rem;
+  background: rgb(250, 231, 209);
+  width: 164rem;
+}
+.packages h3{
+  text-align: center;
+  font-size: 3rem;
+  margin: 5rem;
+  color: var(--Primary-color);
+}
+ .packages .package-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+ }
+
+ .packages .packaging-content img{
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+ }
+ .packages .packaging-content h4, h2{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: none;
+  color: #a9a7a7;
+  text-transform: none;
+}
+ .packages .packaging-content h2{
+  font-size: 1.5rem;
+  color: #000;
+}
+ .packages .packaging-content .btn{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--Primary-color);
+  display: block;
+}
+
+
