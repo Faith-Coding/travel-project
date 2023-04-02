@@ -269,9 +269,7 @@ body {
   font-size: 1rem;
 
 }
-.packages .packages-content .btn{
-font-size: 1rem;
-  }
+
 .book .row img {
  width: 10rem;
 }
@@ -290,13 +288,6 @@ width: 10rem;
 width: 10rem;
 
 }
-    .packages-grid{
-  grid-template-columns: repeat(2, 1fr);
- 
- }
-.packages .packages-content .btn{
-font-size: 1rem;
-  }
 
 }
 .home {
